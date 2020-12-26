@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var isTitle = true
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LandmarkList()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
